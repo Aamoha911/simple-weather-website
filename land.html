@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Weather Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="interactive-sidebar">
+        <h3>Weather Trivia</h3>
+        <ul id="weather-facts">
+            <li data-info="Did you know? The highest temperature ever recorded on Earth was 56.7°C (134°F) in Furnace Creek, California.">Record Temperature</li>
+            <li data-info="Did you know? The coldest temperature ever recorded on Earth was -89.2°C (-128.6°F) at the Soviet Union's Vostok Station in Antarctica.">Record Cold</li>
+            <li data-info="Did you know? The wettest place on Earth is Mawsynram, India, which receives over 467 inches of rain annually.">Wettest Place</li>
+            <li data-info="Did you know? The highest snowfall in a single season was recorded in Mount Baker, Washington, with a total of 1,140 inches (95 feet) in the 1998-1999 season.">Record Snowfall</li>
+            <li data-info="Did you know? The most intense hurricane ever recorded in terms of wind speed was Hurricane Patricia, which reached speeds of 215 mph (345 km/h) in 2015.">Strongest Hurricane</li>
+            <li data-info="Did you know? The longest period of continuous sunlight occurs in the Svalbard archipelago, Norway, where the sun doesn’t set for about four months during the summer.">Midnight Sun</li>
+            <li data-info="Did you know? The driest place on Earth is the Atacama Desert in Chile, where some weather stations have never recorded any rain.">Driest Place</li>
+
+        </ul>
+        <div id="fact-info" class="fact-info"></div>
+    </div>
+    <div class="city-selector">
+        <h3>Choose a City</h3>
+        <div class="autocomplete">
+            <input type="text" id="city-input" placeholder="Type a city name" autocomplete="off">
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+    </div>
+    <div class="weather-widget">
+        
+        <div class="background-image" id="background-image"></div>
+        <div class="weather-content">
+            <div class="location">
+                <h2>Weather in <span id="location-name">Select a location</span></h2>
+            </div>
+            <div class="temperature">
+                <h1 id="temp">--°C</h1>
+            </div>
+            <div class="details">
+                <p>Condition: <span id="condition">--</span></p>
+                <p>Humidity: <span id="humidity">--</span>%</p>
+                <p>Wind: <span id="wind-speed">--</span> km/h</p>
+            </div>
+            <div class="user-info">
+                <p>Your Local Time: <span id="local-time">--</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
